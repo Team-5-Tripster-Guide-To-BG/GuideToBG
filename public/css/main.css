@@ -33,10 +33,33 @@
     margin-top: 50px;
     margin-bottom: 30px;
 }
+.usefulTips{
+    font-family: 'Reenie Beanie', sans-serif;
+    font-size: 50px !important;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
 .text-center-name{
     font-family: 'Reenie Beanie', sans-serif;
     font-size: 30px !important;
     letter-spacing: 4px;
     margin-top: 30px;
-    
+}
+
+.thin-blue-border {
+    border-color: blue;
+    padding: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+.center {
+    text-align: center;
+}
+
+.smaller-image {
+    width: 100px;
 }
