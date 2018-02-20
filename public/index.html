@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Tripster Guide To Bulgaria</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -174,6 +175,25 @@
                     <li class="listItem"><strong>Plovdiv</strong></li>
                 </ul>
             </div>
+
+            <div class="container">
+                <form id="contactForm">
+                    <h3 id="title">Contact Form</h3> 
+                    <div>
+                        <input id="name" type="text" name="name" required class="validate" placeholder="Name">
+                    </div>
+                    <div>
+                        <input id="email" type="email" name="email" required class="validate" placeholder="Email">
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" class="validate" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                         <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>          
+                </form>
+            </div>
+      
         </main>
         <footer>
         </footer>
