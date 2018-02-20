@@ -63,3 +63,22 @@
 #demo, #demo2, #demo3{
     margin-top: 20px;
 }
+
+.custom-background {
+    background-color: white !important;
+    color: white;
+    border: blue;
+}
+
+.ui-widget { font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em !important;}
+.ui-widget .ui-widget { font-size: 1em !important; }
+.ui-widget input, .ui-widget select, .ui-widget textarea,.ui-widget button {font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1em !important; }
+.ui-widget-content { color: black !important; }
+.ui-widget-content a { color: white !important; }
+.ui-widget-header { background: white; color: cyan; font-weight: bold; !important;}
+.ui-widget-header a { color: white !important; }
+
+.usefulInfoImage {
+    width: 60px;
+    height: 60px;
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Tripster Guide To Bulgaria</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -12,182 +13,183 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-    <div id="wrapper" class="container-fluid">
-        <header>
-        </header>
-        <nav class="navbar navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#myPage">Tripster Guide to Bulgaria</a>
+<div id="wrapper" class="container-fluid">
+    <header>
+    </header>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#myPage">Tripster Guide to Bulgaria</a>
+            </div>
+            <div class="navbar-fields" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#myPage">Home</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#band">General Info</a></li>
+                    <li><a href="#usefulTips">Useful Tips</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="contents-container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/photo-Tarnovo-1.jpg" alt="Veliko Tarnovo" width="800" height="500">
+                    <div class="carousel-caption">
+                        <h3>Veliko Tarnovo</h3>
+                        <p>Veliko Tarnovo - the old capital of Bulgaria is mesmerising.</p>
+                    </div>
                 </div>
-                <div class="navbar-fields" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#myPage">Home</a></li>
-                        <li><a href="#aboutUs">About Us</a></li>
-                        <li><a href="#band">General Info</a></li>
-                        <li><a href="#usefulTips">Useful Tips</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                <div class="item">
+                    <img src="images/photo-Tarnovo-2.jpg" alt="Veliko Tarnovo" width="800" height="500">
+                    <div class="carousel-caption">
+                        <h3>Veliko Tarnovo</h3>
+                        <p>During the winter as well.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Container (The Team Section) -->
+        <div id="aboutUs" class="container text-center">
+            <h3 class="the-tripsters-about"><strong>The Tripsters</strong></h3>
+            <p><em>"Life is not meant to be lived in one place!"</em></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p class="text-center-name"><strong>Alex</strong></p><br>
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="images/photosTripsters/picture-Alex-male.jpg" class="img-circle person" alt="Alex" width="255" height="255">
+                    </a>
+                    <div id="demo" class="collapse">
+                        <p>Alex adores Bulgarian seaside.</p>
+                        <p>He can tell you stories for the beaches</p>
+                        <p>from Durankulak to Silistar.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <p class="text-center-name"><strong>Alex</strong></p><br>
+                    <a href="#demo2" data-toggle="collapse">
+                        <img src="images/photosTripsters/picture-Alex-female.jpg" class="img-circle person" alt="Alex" width="255" height="255">
+                    </a>
+                    <div id="demo2" class="collapse">
+                        <p>Alex loves hiking.</p>
+                        <p>She would love to show you </p>
+                        <p>the beautiful Bulgarian mountains.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <p class="text-center-name"><strong>Sophie</strong></p><br>
+                    <a href="#demo3" data-toggle="collapse">
+                        <img src="images/photosTripsters/picture-Sophie.jpg" class="img-circle person" alt="Sophie" width="255" height="255">
+                    </a>
+                    <div id="demo3" class="collapse">
+                        <p>Sophie loves partying.</p>
+                        <p>She can help you discover the night life</p>
+                        <p>in the biggest cities and the seaside.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="usefulTips" class="container text-center">
+            <h3 class="usefulTips"><strong>Useful tips</strong></h3>
+            <p class="center"><em>"I wish I knew all this when I visited your neighbours!!"</em></p>
+            <br/>
+            <div class="row">
+                <div class="selector" id="tabs">
+                    <ul>
+                        <li><a href="#fragment-1"><img class="usefulInfoImage" src="images/usefulInfo/wallet.png"></a></li>
+                        <li><a href="#fragment-2"><img class="usefulInfoImage" src="images/usefulInfo/plane64.png"></a></li>
+                        <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
+                        <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
+                        <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
+                        <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
+                        <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
+                        <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
+                        <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
+                        <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
+                        <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
+                        <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-        <main id="contents-container">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="images/photo-Tarnovo-1.jpg" alt="Veliko Tarnovo" width="800" height="500">
-                        <div class="carousel-caption">
-                            <h3>Veliko Tarnovo</h3>
-                            <p>Veliko Tarnovo - the old capital of Bulgaria is mesmerising.</p>
-                        </div>
+                    <div id="fragment-1">
+                        <p>First tab is active by default:</p>
                     </div>
-                    <div class="item">
-                        <img src="images/photo-Tarnovo-2.jpg" alt="Veliko Tarnovo" width="800" height="500">
-                        <div class="carousel-caption">
-                            <h3>Veliko Tarnovo</h3>
-                            <p>During the winter as well.</p>
-                        </div>
+                    <div id="fragment-2">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                     </div>
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <!-- Container (The Band Section) -->
-            <div id="aboutUs" class="container text-center">
-                <h3 class="the-tripsters-about"><strong>The Tripsters</strong></h3>
-                <p><em>"Life is not meant to be lived in one place!"</em></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <br>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p class="text-center-name"><strong>Alex</strong></p><br>
-                        <a href="#demo" data-toggle="collapse">
-                            <img src="images/photosTripsters/picture-Alex-male.jpg" class="img-circle person" alt="Alex" width="255" height="255">
-                        </a>
-                        <div id="demo" class="collapse">
-                            <p>Alex adores Bulgarian seaside.</p>
-                            <p>He can tell you stories for the beaches</p>
-                            <p>from Durankulak to Silistar.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <p class="text-center-name"><strong>Alex</strong></p><br>
-                        <a href="#demo2" data-toggle="collapse">
-                            <img src="images/photosTripsters/picture-Alex-female.jpg" class="img-circle person" alt="Alex" width="255" height="255">
-                        </a>
-                        <div id="demo2" class="collapse">
-                            <p>Alex loves hiking.</p>
-                            <p>She would love to show you </p>
-                            <p>the beautiful Bulgarian mountains.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <p class="text-center-name"><strong>Sophie</strong></p><br>
-                        <a href="#demo3" data-toggle="collapse">
-                            <img src="images/photosTripsters/picture-Sophie.jpg" class="img-circle person" alt="Sophie" width="255" height="255">
-                        </a>
-                        <div id="demo3" class="collapse">
-                            <p>Sophie loves partying.</p>
-                            <p>She can help you discover the night life</p>
-                            <p>in the biggest cities and the seaside.</p>
-                        </div>
+                    <div id="fragment-3">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                     </div>
                 </div>
             </div>
-            <div id="usefulTips" class="container-fluid">
-                <h3 class="usefulTips"><strong>Useful tips</strong></h3>
-                <p class="center"><em>"I wish I knew all this when I visited your neighbours!!"</em></p>
-                <br/>
-                <div class="row">
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/plane64.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/plane16.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/plane24.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/adaptor.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/card.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/train.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/tray.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/wallet.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/plane64.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/plane64.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/plane64.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/plane64.png" alt="A plain symbol."></a>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer>
-        </footer>
+        </div>
+    </main>
+    <footer>
+    </footer>
     <div id="fb-root"></div>
 </div>
-    <script>
-        $(document).ready(function(){
-            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-
-                    var hash = this.hash;
-
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function(){
-
-                        window.location.hash = hash;
-                    });
+<script>
+    $(document).ready(function(){
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+        $(window).scroll(function() {
+            $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
                 }
             });
+        });
+    })
+</script>
+<script>
+    $( ".selector" ).tabs({
+        event: "mouseover"
+    });
 
-            $(window).scroll(function() {
-                $(".slideanim").each(function(){
-                    var pos = $(this).offset().top;
+    // Getter
+    var event = $( ".selector" ).tabs( "option", "event" );
 
-                    var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
-                        $(this).addClass("slide");
-                    }
-                });
-            });
-        })
-    </script>
+    // Setter
+    $( ".selector" ).tabs( "option", "event", "mouseover" );
+</script>
+
 </body>
 </html>
