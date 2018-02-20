@@ -47,19 +47,19 @@
     letter-spacing: 4px;
     margin-top: 30px;
 }
-
 .thin-blue-border {
-    border-color: blue;
+    border-color: white;
     padding: 20px;
     border-width: 3px;
     border-style: solid;
     border-radius: 10%;
 }
-
 .center {
     text-align: center;
 }
-
 .smaller-image {
     width: 100px;
+}
+#demo, #demo2, #demo3{
+    margin-top: 20px;
 }
