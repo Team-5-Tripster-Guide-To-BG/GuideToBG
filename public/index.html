@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Tripster Guide To Bulgaria</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -12,6 +13,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
     <div id="wrapper" class="container-fluid">
@@ -144,35 +147,13 @@
                     <div class="col-sm-1">
                         <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/plane64.png" alt="A plain symbol."></a>
                     </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/plane64.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/plane64.png" alt="A plain symbol."></a>
-                    </div>
-                    <div class="col-sm-1">
-                        <a href="#"><img class="smaller-image thin-blue-border" src="images/usefulInfo/plane64.png" alt="A plain symbol."></a>
-                    </div>
                 </div>
             </div>
-            <div id="personalTripsterList" class="container-fluid">
-                <div id="myDIV" class="header">
-                    <h2 class="personal-to-visit-list"><strong>* Personal To Visit List *</strong></h2>
-                    <div class="addItems">
-                        <input type="text" id="myInput" placeholder="Place, restaurant, bar...">
-                        <span onclick="newElement()" class="addBtn">Add</span>
-                    </div>
-                </div>
-
-                <ul id="myUl" class="ulList">
-                    <li class="addedItem"><strong>Sofia</strong></li>
-                    <li class="addedItem"><strong>Plovdiv</strong></li>
-                    <li class="addedItem"><strong>Veliko Tarnovo</strong></li>
-                </ul>
-            </div>
-        </main>
-        <footer>
-        </footer>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <div id="fb-root"></div>
 </div>
     <script>
         $(document).ready(function(){
@@ -202,8 +183,6 @@
                 });
             });
         })
-
-
         // Create a "close" button and append it to each list item
         var myNodelist = document.getElementsByClassName("addedItem");
         var i;
@@ -259,6 +238,17 @@
                 }
             }
         }
+    </script>
+    <script>
+        $( ".selector" ).tabs({
+            event: "mouseover"
+        });
+
+        // Getter
+        var event = $( ".selector" ).tabs( "option", "event" );
+
+        // Setter
+        $( ".selector" ).tabs( "option", "event", "mouseover" );
     </script>
 </body>
 </html>
