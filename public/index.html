@@ -177,6 +177,7 @@
                             <li class="listItem"><strong>Varna</strong></li>
                             <li class="listItem"><strong>Plovdiv</strong></li>
                         </ul>
+                        <input type="button" id="button-print-ToVisit-List"  value="Print" onclick="printDiv();">
                     </div>
                 </div>
             </div>
@@ -317,6 +318,22 @@
                     content.style.maxHeight = content.scrollHeight + "px";
                 }
             });
+        }
+
+        function printDiv()
+        {
+            var divToPrint=document.getElementById('personalTripsterList');
+
+            var newWin=window.open('','Print-Window');
+
+            newWin.document.open();
+
+            newWin.document.write('<html><body onload="window.print()">'+divToPrint.innerHTML+ divToPrint.innerText + '</body></html>');
+
+            newWin.document.close();
+
+            setTimeout(function(){newWin.close();},10);
+
         }
     </script>
 </body>

@@ -252,5 +252,17 @@ input {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
+}
+#button-print-ToVisit-List{
+    background: #beb3d9;
+    color: #4f4f4f;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    width: 20%;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    float: right;
 }
