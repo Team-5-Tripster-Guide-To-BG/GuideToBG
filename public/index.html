@@ -162,19 +162,25 @@
                 </div>
             </div>
 
-            <!-- ToVisit List -->
-            <div id="personalTripsterList" class="container-fluid">
-                <div id="myDIV" class="header">
-                    <h2 class="personal-to-visit-list"><strong>* Personal To Visit List *</strong></h2>
-                    <input type="text" id="myInput" placeholder="Place, restaurant, bar...">
-                    <span onclick="newElement()" class="addBtn">Add</span>
+            <!-- ToVisit List collapsible + ToVisit List-->
+            <div class="collapsible-to-visit">
+                <button class="collapsible"><strong>* Click here for personal ToVisit List *</strong></button>
+                <div class="content">
+                    <div id="personalTripsterList" class="container-fluid">
+                        <div id="myDIV" class="header">
+                            <h2 class="personal-to-visit-list"><strong>* Personal To Visit List *</strong></h2>
+                            <input type="text" id="myInput" placeholder="Place, restaurant, bar...">
+                            <span onclick="newElement()" class="addBtn">Add</span>
+                        </div>
+                        <ul id="myUl">
+                            <li class="listItem"><strong>Sofia</strong></li>
+                            <li class="listItem"><strong>Varna</strong></li>
+                            <li class="listItem"><strong>Plovdiv</strong></li>
+                        </ul>
+                    </div>
                 </div>
-                <ul id="myUl">
-                    <li class="listItem"><strong>Sofia</strong></li>
-                    <li class="listItem"><strong>Varna</strong></li>
-                    <li class="listItem"><strong>Plovdiv</strong></li>
-                </ul>
             </div>
+
 
             <div class="container">
                 <form id="contactForm">
@@ -199,6 +205,7 @@
         </footer>
 </div>
     <script>
+
         // Logic for smooth scrolling to pages
         $(document).ready(function(){
             $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -295,6 +302,21 @@
                     div.style.display = "none";
                 }
             }
+        }
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
         }
     </script>
 </body>

@@ -226,3 +226,31 @@ input {
     color: white;
     border: blue;
 }
+
+
+
+.collapsible {
+    background-color: white;
+    color: #3b005f;
+    cursor: pointer;
+    padding-left: 23%;
+    width: 80%;
+    border: none;
+    text-decoration: #3b005f;
+    text-align: center;
+    font-family: 'Reenie Beanie', sans-serif;
+    outline: none;
+    font-size: 50px;
+    margin-top: 30px;
+}
+.active, .collapsible:hover {
+    background-color: #ffffff;
+    color: deeppink;
+}
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
