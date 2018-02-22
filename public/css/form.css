@@ -3,7 +3,6 @@
     font-size: 50px !important;
     text-align: center;
 }
-
 #contactForm {
     border-radius: 10px;
     width: 50%;
@@ -11,7 +10,6 @@
     margin-right: auto;
     display: block;
 }
-
 #name {
     margin-right: 10px;
     margin-left: 10px;
@@ -20,7 +18,6 @@
     border-radius: 5px;
 
 }
-
 #email {
     margin-right: 10px;
     margin-left: 10px;
@@ -32,7 +29,6 @@
 name:focus {
     width: 100%;
 }
-
 .btn {
     border-radius: 10cm;
     width: 100%;

@@ -5,18 +5,15 @@
     <title>Tripster Guide To Bulgaria</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/about-us.css">
+    <link rel="stylesheet" href="./css/useful-tips.css">
+    <link rel="stylesheet" href="./css/tovisit-list.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
 </head>
 
 <body>
@@ -40,6 +37,7 @@
         </nav>
         <main id="contents-container">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -238,140 +236,16 @@
         <footer>
         </footer>
 </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="../node_modules/printthis/printThis.js"></script>
-    <script>
-
-        // Logic for smooth scrolling to pages
-        $(document).ready(function(){
-            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-
-                    var hash = this.hash;
-
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function(){
-
-                        window.location.hash = hash;
-                    });
-                }
-            });
-
-            $(window).scroll(function() {
-                $(".slideanim").each(function(){
-                    var pos = $(this).offset().top;
-
-                    var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
-                        $(this).addClass("slide");
-                    }
-                });
-            });
-        })
-
-        // Logic for Useful Tips icons
-        $( ".selector" ).tabs({
-            event: "mouseover"
-        });
-
-        // Getter
-        var event = $( ".selector" ).tabs( "option", "event" );
-
-        // Setter
-        $( ".selector" ).tabs( "option", "event", "mouseover" );
-
-
-        // Logic for ToVisit List
-        // Create a "close" button and append it to each list item
-        var myNodelist = document.getElementsByClassName("listItem");
-        var i;
-        for (i = 0; i < myNodelist.length; i++) {
-            var span = document.createElement("SPAN");
-            var txt = document.createTextNode("\u00D7");
-            span.className = "close";
-            span.appendChild(txt);
-            myNodelist[i].appendChild(span);
-        }
-
-        // Click on a close button to hide the current list item
-        var close = document.getElementsByClassName("close");
-        var i;
-        for (i = 0; i < close.length; i++) {
-            close[i].onclick = function() {
-                var div = this.parentElement;
-                div.style.display = "none";
-            }
-        }
-
-        // Add a "checked" symbol when clicking on a list item
-        var list = document.querySelector('ul');
-        list.addEventListener('click', function(ev) {
-            if (ev.target.tagName === 'LI') {
-                ev.target.classList.toggle('checked');
-            }
-        }, false);
-
-        // Create a new list item when clicking on the "Add" button
-        function newElement() {
-            var li = document.createElement("li");
-            var inputValue = document.getElementById("myInput").value;
-            var t = document.createTextNode(inputValue);
-            li.appendChild(t);
-            if (inputValue === '') {
-                alert("You must write something!");
-            } else {
-                document.getElementById("myUl").appendChild(li);
-            }
-            document.getElementById("myInput").value = "";
-
-            var span = document.createElement("SPAN");
-            var txt = document.createTextNode("\u00D7");
-            span.className = "close";
-            span.appendChild(txt);
-            li.appendChild(span);
-
-            for (i = 0; i < close.length; i++) {
-                close[i].onclick = function() {
-                    var div = this.parentElement;
-                    div.style.display = "none";
-                }
-            }
-        }
-
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
-        //$('personalTripsterList').printThis();
-
-      //  $('#personalTripsterList').printThis({
-       //     importCSS: true,
-      //  });
-        //
-        function printDiv() {
-            var divToPrint=document.getElementById('personalTripsterList');
-
-            var newWin=window.open('','Print-Window');
-
-            newWin.document.open();
-
-            newWin.document.write('<html><body onload="window.print()">'+divToPrint.innerHTML+ divToPrint.innerText + '</body></html>');
-
-            newWin.document.close();
-
-            setTimeout(function(){newWin.close();},10);
-        };
-    </script>
+    <script src="../functions/smooth-scrolling.js"></script>
+    <script src="../functions/useful-tips-logic.js"></script>
+    <script src="../functions/collapsible-function.js"></script>
+    <script src="../functions/tovisit-list-logic.js"></script>
+    <script src="../functions/print-tovisit-list.js"></script>
 </body>
 </html>
