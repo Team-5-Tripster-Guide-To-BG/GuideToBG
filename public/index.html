@@ -16,6 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
 
 <body>
@@ -44,22 +45,54 @@
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
+                <div id="carousel-main-div" class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="images/photo-Tarnovo-1.jpg" alt="Veliko Tarnovo" width="800" height="500">
+                        <img src="images/photo-Tarnovo-1.jpg" alt="Veliko Tarnovo">
                         <div class="carousel-caption">
                             <h3>Veliko Tarnovo</h3>
                             <p>Veliko Tarnovo - the old capital of Bulgaria is mesmerising.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="images/photo-Tarnovo-2.jpg" alt="Veliko Tarnovo" width="800" height="500">
+                        <img src="images/photo-Tarnovo-2.jpg" alt="Veliko Tarnovo">
                         <div class="carousel-caption">
                             <h3>Veliko Tarnovo</h3>
                             <p>During the winter as well.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/photo-Varna-1.jpg" alt="Varna">
+                        <div class="carousel-caption">
+                            <h3>Varna</h3>
+                            <p>The sea capital of Bulgaria.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/photo-Plovdiv-1.JPG" alt="Plovdiv">
+                        <div class="carousel-caption">
+                            <h3>Plovdiv</h3>
+                            <p>Plovdiv is one of the oldest cities in the world.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/photo-Plovdiv-2.jpg" alt="Plovdiv">
+                        <div class="carousel-caption">
+                            <h3>Plovdiv</h3>
+                            <p>This magnificent theater still holds concerts.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/photo-Plovdiv-3.jpg" alt="Plovdiv">
+                        <div class="carousel-caption">
+                            <h3>Plovdiv</h3>
+                            <p>You can find a lot of history in this museum in the old city.</p>
                         </div>
                     </div>
                 </div>
@@ -205,6 +238,7 @@
         <footer>
         </footer>
 </div>
+    <script type="text/javascript" src="../node_modules/printthis/printThis.js"></script>
     <script>
 
         // Logic for smooth scrolling to pages
@@ -319,9 +353,13 @@
                 }
             });
         }
+        //$('personalTripsterList').printThis();
 
-        function printDiv()
-        {
+      //  $('#personalTripsterList').printThis({
+       //     importCSS: true,
+      //  });
+        //
+        function printDiv() {
             var divToPrint=document.getElementById('personalTripsterList');
 
             var newWin=window.open('','Print-Window');
@@ -333,8 +371,7 @@
             newWin.document.close();
 
             setTimeout(function(){newWin.close();},10);
-
-        }
+        };
     </script>
 </body>
 </html>
