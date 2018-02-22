@@ -1,0 +1,47 @@
+.center {
+    text-align: center;
+}
+.usefulTips{
+    font-family: 'Reenie Beanie', sans-serif;
+    font-size: 50px !important;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.thin-blue-border {
+    border-color: white;
+    padding: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10%;
+}
+.ui-widget {
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 1.1em !important;
+}
+.ui-widget .ui-widget {
+    font-size: 1em !important;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea,.ui-widget button {
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 1em !important;
+}
+.ui-widget-content {
+    color: black !important; }
+.ui-widget-content a {
+    color: white !important;
+    background-color: white !important;
+}
+.ui-widget-header {
+    background: white;
+    color: cyan;
+    font-weight: bold; !important;
+}
+.ui-widget-header a {
+    color: white !important;
+}
+.usefulInfoImage {
+    width: 60px;
+    height: 60px;
+}

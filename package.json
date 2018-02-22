@@ -1,0 +1,23 @@
+{
+  "name": "guidetobg",
+  "version": "1.0.0",
+  "description": "Tourist guide to Bulgaria JavaScript single-page application using HTML, CSS and JavaScript (jQuery).",
+  "main": "index.js",
+  "dependencies": {
+    "printthis": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-5-Tripster-Guide-To-BG/GuideToBG.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-5-Tripster-Guide-To-BG/GuideToBG/issues"
+  },
+  "homepage": "https://github.com/Team-5-Tripster-Guide-To-BG/GuideToBG#readme"
+}
