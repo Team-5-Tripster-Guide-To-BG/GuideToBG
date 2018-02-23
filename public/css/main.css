@@ -57,3 +57,27 @@
     transition: max-height 0.2s ease-out;
     background-color: #ffffff;
 }
+
+/* search classes */
+
+.search-header {
+    font-family: "Indie Flower", sans-serif;
+    font-size: 40px !important;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.checked {
+    color: orange;
+}
+
+.media, .media-body {
+    overflow-x: unset !important;
+
+    zoom: 1;
+}
+
+.displayStars {
+    display: inline-block !important;
+}

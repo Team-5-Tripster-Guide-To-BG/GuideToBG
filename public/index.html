@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/tovisit-list.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -215,7 +216,8 @@
 
             <!-- Search engine collapsible-->
             <div class="search-area">
-                <p><strong>You can search in our hotels and restaurants database below</strong></p>
+                <p class="search-header"><strong>You can search in our hotels and restaurants database below</strong></p>
+                <p class="center"><em>"It's so lovely that they share their database with us!"</em></p>
                 <div>
                     <div id="personal-search" class="container-fluid">
                         <div class="col-lg-6">
@@ -235,11 +237,19 @@
                             </div><!-- /input-group -->
                         </div><!-- /.col-lg-6 -->
                     </div>
+
                     <div class="container">
-                        <h2>Results panel</h2>
-                        <div class="panel panel-default">
-                            <div class="panel-body" id="results"></div>
+                        <div class="media" id="rating">
+                            <div class="media-left media-top displayStars">Rating:
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="media-body" id="results"></div>
                         </div>
+                        <hr>
                     </div>                </div><!-- /.row -->
 
 

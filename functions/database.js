@@ -4,53 +4,60 @@ const databaseFunction = function() {
             {
                 id: 0,
                 name: 'Cherno more',
-                rating: '*****',
+                rating: 5,
+                address: '5 Varna str., Varna',
+                telephone: '+359 0101010101',
                 regularPricePerGuest: 100,
-                address: '5 Varna str., Varna'
             },
             {
                 id: 1,
                 name: 'Vitosha',
-                rating: '***',
+                rating: 3,
+                address: '5 Vitosha str., Sofia',
+                telephone: '+359 0101010101',
                 regularPricePerGuest: 200,
-                address: '5 Vitosha str., Sofia'
             },
             {
                 id: 2,
                 name: 'Plovdiv',
-                rating: '****',
+                rating: 4,
+                address: '5 Plovdiv str., Plovdiv',
+                telephone: '+359 0101010101',
                 regularPricePerGuest: 150,
-                address: '5 Plovdiv str., Plovdiv'
             },
             {
                 id: 3,
                 name: 'Plovdiv maina',
-                rating: '****',
-                regularPricePerGuest: 150,
-                address: '5 Plovdiv str., Plovdiv'
+                rating: 4,
+                address: '5 Plovdiv str., Plovdiv',
+                telephone: '+359 0101010101',
+                regularPricePerGuest: 150
             }
         ],
         restaurants: [
             {
                 id: 1,
                 name: 'Ribarska sreshta',
+                rating: 4,
+                address: '5 Varna str., Varna',
                 telephone: '+359 0101010101',
-                regularPricePerGuest: 10,
-                address: '5 Varna str., Varna'
+                regularPricePerGuest: 10
             },
             {
                 id: 2,
                 name: 'Vitosha',
+                rating: 4,
+                address: '5 Vitosha str., Sofia',
                 telephone: '+359 0202020202',
-                regularPricePerGguest: 20,
-                address: '5 Vitosha str., Sofia'
+                regularPricePerGguest: 20
             },
             {
                 id: 3,
                 name: 'Plovdiv',
+                rating: 4,
+                address: '5 Plovdiv str., Plovdiv',
                 telephone: '+359 03030300033',
-                regularPricePerGuest: 15,
-                address: '5 Plovdiv str., Plovdiv'
+                regularPricePerGuest: 15
             }
         ]
     };
