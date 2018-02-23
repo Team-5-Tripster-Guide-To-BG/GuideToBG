@@ -28,25 +28,15 @@
     border-radius: 5px;
 }
 #name-field{
-<<<<<<< HEAD
     display: inline;
-=======
-  display: inline;
->>>>>>> 8843f6a8d40d703a0d206f2ed9dc7fdacf26b320
 }
 #email-field{
     display: inline;
 }
 #fileds {
-<<<<<<< HEAD
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 15px;
-=======
   text-align: center;
   margin-bottom: 20px;
   margin-top: 15px;
->>>>>>> 8843f6a8d40d703a0d206f2ed9dc7fdacf26b320
 }
 name:focus {
     width: 100%;
