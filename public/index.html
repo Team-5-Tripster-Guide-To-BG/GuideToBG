@@ -238,11 +238,13 @@
                 </div><!-- /.row -->
             </div>
 
+            <script type="text/javascript" src="../functions/formValidation.js"></script>
             <div class="container">
                 <form id="contactForm">
-                    <h3 id="title">Contact Form</h3> 
+                    <h3 id="title">Contact Form</h3>
                     <div>
-                        <input id="name" type="text" name="name" required class="validate" placeholder="Name">
+                        <input id="name" type="text" name="name" class="validate" placeholder="Name" onblur="validateName();" required>
+                        <p id="validateMsg"></p>
                     </div>
                     <div>
                         <input id="email" type="email" name="email" required class="validate" placeholder="Email">
@@ -252,10 +254,10 @@
                     </div>
                     <div>
                          <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>          
+                    </div>
                 </form>
             </div>
-      
+
         </main>
         <footer>
         </footer>
