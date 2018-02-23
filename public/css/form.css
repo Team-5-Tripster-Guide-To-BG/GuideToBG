@@ -1,9 +1,10 @@
 #title {
-    font-family: 'Reenie Beanie', sans-serif;
-    font-size: 50px;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 #contactForm {
     border-radius: 10px;
