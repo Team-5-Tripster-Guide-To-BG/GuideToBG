@@ -154,46 +154,27 @@
                 <h3 class="usefulTips"><strong>Useful tips</strong></h3>
                 <p class="center"><em>"I wish I knew all this when I visited your neighbours!!"</em></p>
                 <br/>
-                <div class="row">
-                    <div class="selector" id="tabs">
-                        <ul>
-                            <li><a href="#fragment-1"><img class="usefulInfoImage" src="images/usefulInfo/wallet.png"></a></li>
-                            <li><a href="#fragment-2"><img class="usefulInfoImage" src="images/usefulInfo/plane64.png"></a></li>
-                            <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
-                            <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
-                            <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
-                            <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
-                            <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
-                            <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
-                            <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
-                            <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
-                            <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
-                            <li><a href="#fragment-3"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></a></li>
-                            <li><a href="#fragment-2"><img class="usefulInfoImage" src="images/usefulInfo/plane64.png"></a></li>
-                            <li><a href="#fragment-2"><img class="usefulInfoImage" src="images/usefulInfo/plane64.png"></a></li>
-                            <li><a href="#fragment-2"><img class="usefulInfoImage" src="images/usefulInfo/plane64.png"></a></li>
-                        </ul>
-                        <div id="fragment-1">
-                        <p>First tab is active by default:</p>
-                        </div>
-                        <div id="fragment-2">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                            </p>
-                        </div>
-                        <div id="fragment-3">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                            </p>
-                        </div>
-                    </div>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'London')"><img class="usefulInfoImage" src="images/usefulInfo/wallet.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/plane64.png"></button>
+                </div>
+
+                <div id="London" class="tabcontent">
+                    <h3>Money</h3>
+                    <p>Money money money</p>
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                    <h3>Travel</h3>
+                    <p>Travel travel travel</p>
+                </div>
+
+                <div id="Tokyo" class="tabcontent">
+                    <h3>Travel</h3>
+                    <p>Travel travel travel</p>
                 </div>
             </div>
-
             <!-- ToVisit List collapsible + ToVisit List-->
             <div class="collapsible-to-visit">
                 <button class="collapsible"><strong>* Click here for personal ToVisit List *</strong></button>
