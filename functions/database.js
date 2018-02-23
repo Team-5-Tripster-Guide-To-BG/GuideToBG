@@ -38,7 +38,7 @@ const databaseFunction = function() {
             {
                 id: 1,
                 name: 'Ribarska sreshta',
-                rating: 4,
+                rating: 5,
                 address: '5 Varna str., Varna',
                 telephone: '+359 0101010101',
                 regularPricePerGuest: 10
@@ -54,7 +54,7 @@ const databaseFunction = function() {
             {
                 id: 3,
                 name: 'Plovdiv',
-                rating: 4,
+                rating: 3,
                 address: '5 Plovdiv str., Plovdiv',
                 telephone: '+359 03030300033',
                 regularPricePerGuest: 15

@@ -2,19 +2,8 @@ const searchHotelResult = function() {
 
     const html = function(searchResult) {
 
-        return `<div class="row">
-    <div class="col s12 m6">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
-            <span class="card-title">${searchResult.name}</span>
-            <p>${searchResult.rating}</p>
-          </div>
-          <div class="card-action">
-            <a>${searchResult.regularPricePerGuest}</a>            
-          </div>
-        </div>
-      </div>
-    </div>`;
+        return `<span><b>Name:</b> ${searchResult.name} <b>Address:</b> ${searchResult.address} <b>Telephone:</b> ${searchResult.telephone}</span><hr>`;
+
     };
 
     return {
