@@ -11,10 +11,10 @@
     position: relative;
     padding: 12px 6px 10px 20px;
     background: #d2ccee;
-    font-size: 30px;
+    font-size: 25px;
     transition: 0.2s;
     border-radius: 3px;
-    font-family: 'Reenie Beanie', sans-serif;
+    font-family: "Indie Flower", sans-serif;
     /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -68,8 +68,8 @@
 
 /* Style the header */
 .personal-to-visit-list{
-    font-family: 'Reenie Beanie', sans-serif;
-    font-size: 50px !important;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 40px !important;
     margin-bottom: 30px;
 }
 .addItems {

@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
 </head>
 
 <body>
@@ -214,9 +214,9 @@
             </div>
 
             <!-- Search engine collapsible-->
-            <div class="collapsible-search">
-                <button class="collapsible"><strong>* Click here to use our search engine *</strong></button>
-                <div class="content">
+            <div class="search-area">
+                <p><strong>You can search in our hotels and restaurants database below</strong></p>
+                <div>
                     <div id="personal-search" class="container-fluid">
                         <div class="col-lg-6">
                             <div class="input-group">
@@ -235,8 +235,13 @@
                             </div><!-- /input-group -->
                         </div><!-- /.col-lg-6 -->
                     </div>
-                </div><!-- /.row -->
-            </div>
+                    <div class="container">
+                        <h2>Results panel</h2>
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="results"></div>
+                        </div>
+                    </div>                </div><!-- /.row -->
+
 
             <script type="text/javascript" src="../functions/formValidation.js"></script>
             <div class="container">
@@ -265,13 +270,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
     <script type="text/javascript" src="../node_modules/printthis/printThis.js"></script>
     <script src="../functions/smooth-scrolling.js"></script>
     <script src="../functions/useful-tips-logic.js"></script>
     <script src="../functions/collapsible-function.js"></script>
     <script src="../functions/tovisit-list-logic.js"></script>
     <script src="../functions/print-tovisit-list.js"></script>
+    <script src="../functions/search-restaurant-controller.js"></script>
+    <script src="../functions/search-hotel-controller.js"></script>
+    <script src="../functions/empty-input-controller.js"></script>
+    <script src="../functions/no-results-controller.js"></script>
+    <script src="../functions/database.js"></script>
+    <script src="../functions/search-result.js"></script>
 </body>
 </html>
