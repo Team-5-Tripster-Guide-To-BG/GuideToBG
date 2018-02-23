@@ -243,16 +243,17 @@
                     </div>                </div><!-- /.row -->
 
 
-            <script type="text/javascript" src="../functions/formValidation.js"></script>
+            <script type="text/javascript" src="../functions/form-validation.js"></script>
             <div class="container">
                 <form id="contactForm">
                     <h3 id="title">Contact Form</h3>
-                    <div>
-                        <input id="name" type="text" name="name" class="validate" placeholder="Name" onblur="validateName();" required>
-                        <p id="validateMsg"></p>
-                    </div>
-                    <div>
-                        <input id="email" type="email" name="email" required class="validate" placeholder="Email">
+                    <div id="fileds">
+                        <div id="name-field">
+                            <input id="name" type="text" name="name" class="validate" placeholder="Name" onblur="return validateName();" required>
+                        </div>
+                        <div id="email-field">
+                            <input id="email" type="email" name="email" class="validate" placeholder="Email" required>
+                        </div>
                     </div>
                     <div>
                         <textarea id="message" name="message" class="validate" placeholder="Message"></textarea>
@@ -271,6 +272,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script
+<<<<<<< HEAD
             src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
@@ -278,6 +280,15 @@
             src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
             integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
             crossorigin="anonymous"></script>
+=======
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+      <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>
+>>>>>>> 8843f6a8d40d703a0d206f2ed9dc7fdacf26b320
     <script type="text/javascript" src="../node_modules/printthis/printThis.js"></script>
     <script src="../functions/smooth-scrolling.js"></script>
     <script src="../functions/useful-tips-logic.js"></script>
