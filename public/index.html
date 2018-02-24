@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./css/about-us.css">
     <link rel="stylesheet" href="./css/useful-tips.css">
     <link rel="stylesheet" href="./css/tovisit-list.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
 </head>
 
 <body>
@@ -23,11 +23,16 @@
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#myPage">Tripster Guide to Bulgaria</a>
+                    <a class="navbar-brand" href="#wrapper">Tripster Guide to Bulgaria</a>
+                <button type="button" id="toggle-button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 </div>
-                <div class="navbar-fields" id="myNavbar">
+                <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#myPage">Home</a></li>
+                        <li><a href="#wrapper">Home</a></li>
                         <li><a href="#aboutUs">About Us</a></li>
                         <li><a href="#band">General Info</a></li>
                         <li><a href="#usefulTips">Useful Tips</a></li>
@@ -47,7 +52,6 @@
                     <li data-target="#myCarousel" data-slide-to="3"></li>
                     <li data-target="#myCarousel" data-slide-to="4"></li>
                     <li data-target="#myCarousel" data-slide-to="5"></li>
-                    <li data-target="#myCarousel" data-slide-to="6"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
@@ -107,7 +111,6 @@
                 </a>
             </div>
 
-
             <!-- Container (The About Us Section) -->
             <div id="aboutUs" class="container text-center">
                 <h3 class="the-tripsters-about"><strong>The Tripsters</strong></h3>
@@ -150,14 +153,22 @@
                     </div>
                 </div>
             </div>
-            <div id="usefulTips" class="container-fluid">
+            <div id="usefulTips" class="container">
                 <h3 class="usefulTips"><strong>Useful tips</strong></h3>
                 <p class="center"><em>"I wish I knew all this when I visited your neighbours!!"</em></p>
                 <br/>
                 <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'London')"><img class="usefulInfoImage" src="images/usefulInfo/wallet.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Paris')"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></button>
                     <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/plane64.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/seoul-metro-logo.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')"><img class="usefulInfoImage" src="images/usefulInfo/taxi-urban-transport.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/clock-circular-outline.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'London')"><img class="usefulInfoImage" src="images/usefulInfo/wallet.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/rounded-plug.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/card.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/tray.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/wine.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/man-in-a-party-dancing-with-people.png"></button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/shopping-cart.png"></button>
                 </div>
 
                 <div id="London" class="tabcontent">
@@ -195,36 +206,11 @@
                 </div>
             </div>
 
-            <!-- Search engine collapsible-->
+            <!-- Search engine showing on click-->
             <div class="search-area">
-                <p class="search-header"><strong>You can search in our hotels and restaurants database below</strong></p>
-                <p class="center"><em>"It's so lovely that they share their database with us!"</em></p>
-                <div>
-                    <div id="personal-search" class="container-fluid">
-                        <div class="col-lg-6">
-                            <div class="input-group">
-                                <input type="text" class="form-control" id ="hotel-search-input" placeholder="Search for hotels">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button" id ="hotel-search-btn">Search!</button>
-                                </span>
-                            </div><!-- /input-group -->
-                        </div><!-- /.col-lg-6 -->
-                        <div class="col-lg-6">
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="restaurant-search-input" placeholder="Search for restaurants">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button" id ="restaurant-search-btn">Search!</button>
-                                </span>
-                            </div><!-- /input-group -->
-                        </div><!-- /.col-lg-6 -->
-                    </div>
-
-                    <div class="container">
-                        <div id="results"></div>
-                    </div>
-                </div>
-             </div>
-
+                <p class="search-header" id="search-area"><img class="usefulInfoImage" src="images/magnifying-glass24.png"><strong>  Click here to search in our hotels and restaurants database</strong></p>
+                <div id="search-area-showed"></div>
+            </div>
 
             <script type="text/javascript" src="../functions/form-validation.js"></script>
             <div class="container">
@@ -262,12 +248,13 @@
     <script src="../functions/collapsible-function.js"></script>
     <script src="../functions/tovisit-list-logic.js"></script>
     <script src="../functions/print-tovisit-list.js"></script>
-    <script src="../functions/search-restaurant-controller.js"></script>
-    <script src="../functions/search-hotel-controller.js"></script>
+    <script src="../functions/search-show-controller.js"></script>
+    <script src="../functions/search-database-controller.js"></script>
     <script src="../functions/rating-controller.js"></script>
     <script src="../functions/empty-input-controller.js"></script>
     <script src="../functions/no-results-controller.js"></script>
     <script src="../functions/database.js"></script>
     <script src="../functions/search-result.js"></script>
+    <script src="../functions/search-show.js"></script>
 </body>
 </html>

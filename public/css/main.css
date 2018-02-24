@@ -15,14 +15,22 @@
     font-size: 12px !important;
     letter-spacing: 4px;
 }
-.navbar li a, .navbar .navbar-brand {
-    color: #d5d5d5;
+
+.navbar li a, .navbar, .navbar-brand {
+     color: #d5d5d5;
+
 }
 .navbar-nav li a:hover {
     color: #142130;
     opacity: 0.7;
 }
+#toggle-button {
+    background-color: white;
+}
 
+.icon-bar{
+    background-color: #142130;
+}
 
 
 /* Carousel Photos */
@@ -69,7 +77,7 @@
     margin-bottom: 30px;
 }
 .checked {
-    color: orange;
+    color: dodgerblue;
 }
 
 .media, .media-body {
@@ -80,4 +88,9 @@
 
 .displayStars {
     display: inline-block !important;
+}
+
+#results-container {
+
+    margin-top: 20px;
 }
