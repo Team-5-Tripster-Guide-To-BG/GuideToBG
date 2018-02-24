@@ -1,3 +1,6 @@
+.contact-form{
+  margin-top: inherit;
+}
 #title {
     font-family: "Indie Flower", sans-serif;
     font-size: 35px;
@@ -6,7 +9,7 @@
     margin-bottom: 20px;
     margin-top: 30px;
 }
-#contactForm {
+#contact-form {
     border-radius: 10px;
     width: 50%;
     margin-left: auto;
@@ -56,4 +59,7 @@ name:focus {
     border: 2px solid #ccc;
     border-radius: 4px;
     resize: none;
+}
+#error-msg {
+
 }

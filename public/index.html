@@ -216,23 +216,24 @@
                 <div id="search-area-showed"></div>
             </div>
 
-            <script type="text/javascript" src="../functions/form-validation.js"></script>
-            <div class="container">
-                <form id="contactForm">
-                    <h3 id="title">Contact Form</h3>
-                    <div id="fileds">
-                        <div id="name-field">
-                            <input id="name" type="text" name="name" class="validate" placeholder="Name" onblur="return validateName();" required>
+
+            <div class="contact-form">
+                <ul id="error-msg"></ul>
+                    <form id="contact-form" onsubmit="return validateForm();">
+                        <h3 id="title">Contact Form</h3>
+                        <div id="fileds">
+                            <div id="name-field">
+                                <input id="name" type="text" name="name" placeholder="Name">
+                            </div>
+                            <div id="email-field">
+                                <input id="email" type="email" name="email" placeholder="Email" >
+                            </div>
                         </div>
-                        <div id="email-field">
-                            <input id="email" type="email" name="email" class="validate" placeholder="Email" required>
-                        </div>
-                    </div>
                     <div>
                         <textarea id="message" name="message" class="validate" placeholder="Message"></textarea>
                     </div>
                     <div>
-                         <button type="submit" class="btn btn-primary">Submit</button>
+                         <button id="button" type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>
@@ -262,5 +263,6 @@
     <script src="../functions/search-show.js"></script>
     <script src="./data/useful-tips.json"></script>
     <script src="../functions/database-test.js"></script>
+    <script src="../functions/form-validation.js"></script>
 </body>
 </html>
