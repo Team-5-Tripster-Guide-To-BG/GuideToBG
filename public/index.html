@@ -154,20 +154,20 @@
                 <h3 class="usefulTips"><strong>Useful tips</strong></h3>
                 <p class="center"><em>"I wish I knew all this when I visited your neighbours!!"</em></p>
                 <br/>
-                <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'London')"><img class="usefulInfoImage" src="images/usefulInfo/wallet.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Paris')"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/plane64.png"></button>
+                <div class="tab useful-tips-tab">
+                    <button class="tablinks" data-activity="eat" onclick="openCity(event, 'London')"><img class="usefulInfoImage"  src="images/usefulInfo/wallet.png"></button>
+                    <button class="tablinks" data-activity="eat" onclick="openCity(event, 'Paris')"><img class="usefulInfoImage" src="images/usefulInfo/train.png"></button>
+                    <button class="tablinks" data-activity="eat" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/plane64.png"></button>
                 </div>
 
                 <div id="London" class="tabcontent">
                     <h3>Money</h3>
-                    <p>Money money money</p>
+                    <p class="eat"></p>
                 </div>
 
                 <div id="Paris" class="tabcontent">
                     <h3>Travel</h3>
-                    <p>Travel travel travel</p>
+                    <p class="">Travel travel travel</p>
                 </div>
 
                 <div id="Tokyo" class="tabcontent">
@@ -269,5 +269,7 @@
     <script src="../functions/no-results-controller.js"></script>
     <script src="../functions/database.js"></script>
     <script src="../functions/search-result.js"></script>
+    <script src="./data/useful-tips.json"></script>
+    <script src="../functions/database-test.js"></script>
 </body>
 </html>

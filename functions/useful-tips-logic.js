@@ -11,3 +11,13 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+$(".useful-tips-tab").on("click", ".tablinks", function () {
+    let $this = $(this);
+    let elName = $this.attr("data-activity");
+    let elElName = "." + elName;
+
+    database.getActivity(elName).then(function (data) {
+        $(elElName).html(data);
+    });
+});
