@@ -159,33 +159,74 @@
                 <p class="center"><em>"I wish I knew all this when I visited your neighbours!!"</em></p>
                 <br/>
                 <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/plane64.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/seoul-metro-logo.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Paris')"><img class="usefulInfoImage" src="images/usefulInfo/taxi-urban-transport.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/clock-circular-outline.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'London')"><img class="usefulInfoImage" src="images/usefulInfo/wallet.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/rounded-plug.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/card.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/tray.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/wine.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/man-in-a-party-dancing-with-people.png"></button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><img class="usefulInfoImage" src="images/usefulInfo/shopping-cart.png"></button>
+                    <button class="tablinks" onclick="openActivity(event, 'Arrival')"><img src="images/usefulInfo/plane64.png"></button>
+                    <button class="tablinks" onclick="openActivity(event, 'Subway')"><img src="images/usefulInfo/seoul-metro-logo.png"></button>
+                    <button class="tablinks" onclick="openActivity(event, 'Taxi')"><img src="images/usefulInfo/taxi-urban-transport.png"></button>
+                    <button class="tablinks" onclick="openActivity(event, 'Timezone')"><img src="images/usefulInfo/clock-circular-outline.png"></button>
+                    <button class="tablinks" onclick="openActivity(event, 'Currency')"><img src="images/usefulInfo/wallet.png"></button>
+                    <button class="tablinks" onclick="openActivity(event, 'PlugStandart')"><img src="images/usefulInfo/rounded-plug.png"></button>
+                    <button class="tablinks" onclick="openActivity(event, 'CreditCard')"><img src="images/usefulInfo/card.png"></button>
+                    <button class="tablinks" onclick="openActivity(event, 'Restaurants')"><img src="images/usefulInfo/tray.png"></button>
+                    <button class="tablinks" onclick="openActivity(event, 'Bars')"><img src="images/usefulInfo/wine.png"></button>
+                    <button class="tablinks" onclick="openActivity(event, 'Party')"><img src="images/usefulInfo/man-in-a-party-dancing-with-people.png"></button>
+                    <button class="tablinks" onclick="openActivity(event, 'Shopping')"><img src="images/usefulInfo/shopping-cart.png"></button>
                 </div>
 
-                <div id="London" class="tabcontent">
-                    <h3>Money</h3>
-                    <p class="eat"></p>
+                <div id="Arrival" class="tabcontent">
+                    <h3>Arrival</h3>
+                    <p class="arrival"></p>
                 </div>
 
-                <div id="Paris" class="tabcontent">
-                    <h3>Travel</h3>
-                    <p class="">Travel travel travel</p>
+                <div id="Subway" class="tabcontent">
+                    <h3>Subway</h3>
+                    <p class="subway"></p>
                 </div>
 
-                <div id="Tokyo" class="tabcontent">
-                    <h3>Travel</h3>
-                    <p>Travel travel travel</p>
+                <div id="Taxi" class="tabcontent">
+                    <h3>Taxi</h3>
+                    <p class="taxi"></p>
                 </div>
+
+                <div id="Timezone" class="tabcontent">
+                    <h3>Timezone</h3>
+                    <p class="timezone"></p>
+                </div>
+
+                <div id="Currency" class="tabcontent">
+                    <h3>Currency</h3>
+                    <p class="currency"></p>
+                </div>
+
+                <div id="PlugStandart" class="tabcontent">
+                    <h3>Plug Standart</h3>
+                    <p class="plugstandart"></p>
+                </div>
+
+                <div id="CreditCard" class="tabcontent">
+                    <h3>Credit Card</h3>
+                    <p class="creditcard"></p>
+                </div>
+
+                <div id="Restaurants" class="tabcontent">
+                    <h3>Restaurants</h3>
+                    <p class="restaurants"></p>
+                </div>
+
+                <div id="Bars" class="tabcontent">
+                    <h3>Bars</h3>
+                    <p class="bars"></p>
+                </div>
+
+                <div id="Party" class="tabcontent">
+                    <h3>Party</h3>
+                    <p class="party"></p>
+                </div>
+
+                <div id="Shopping" class="tabcontent">
+                    <h3>Shopping</h3>
+                    <p class="shopping"></p>
+                </div>
+
             </div>
             <!-- ToVisit List collapsible + ToVisit List-->
             <div class="collapsible-to-visit">
@@ -236,8 +277,6 @@
             </div>
 
         </main>
-        <footer>
-        </footer>
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -246,7 +285,6 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../node_modules/printthis/printThis.js"></script>
     <script src="../functions/smooth-scrolling.js"></script>
-    <script src="../functions/useful-tips-logic.js"></script>
     <script src="../functions/collapsible-function.js"></script>
     <script src="../functions/tovisit-list-logic.js"></script>
     <script src="../functions/print-tovisit-list.js"></script>
@@ -258,8 +296,9 @@
     <script src="../functions/database.js"></script>
     <script src="../functions/search-result.js"></script>
     <script src="../functions/search-show.js"></script>
-    <script src="./data/useful-tips.json"></script>
-    <script src="../functions/database-test.js"></script>
+    <script src="./data/useful-tips-data.json"></script>
+    <script src="../functions/useful-tips-logic.js"></script>
+    <script src="../functions/useful-tips-db-logic.js"></script>
     <script src="../functions/form-validation.js"></script>
 </body>
 </html>
