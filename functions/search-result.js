@@ -7,7 +7,7 @@ function init(db) {
         while (currentRating.firstChild) {
             currentRating.removeChild(currentRating.firstChild);
         }
-        var currentValue = inputValue.value;
+        var currentValue = inputValue.value.toString();
         if(currentValue.length === 0){
             $('#results').html(function () {
                 const emptyInputController = emptyInput();
@@ -16,7 +16,15 @@ function init(db) {
         })}
 
         else {
-            const filteredResults = data.hotels.filter(f => f.name.indexOf(currentValue) >= 0);
+            var filteredResults;
+            if(document.getElementById("search-city").checked) {
+                filteredResults = data.hotels.filter(f => f.city.indexOf(currentValue) >= 0);
+            } else if(document.getElementById("search-name").checked) {
+                filteredResults = data.hotels.filter(f => f.name.indexOf(currentValue) >= 0);
+            } else if(document.getElementById("search-rating").checked) {
+                filteredResults = data.hotels.filter(f => f.rating == currentValue);
+            }
+
             if(filteredResults.length > 0){
                 const searchController = searchResult();
                 const ratingController = ratingResult();
@@ -55,7 +63,14 @@ function init(db) {
             })}
 
         else {
-            const filteredResults = data.restaurants.filter(f => f.name.indexOf(currentValue) >= 0);
+            var filteredResults;
+            if(document.getElementById("search-city").checked) {
+                filteredResults = data.restaurants.filter(f => f.city.indexOf(currentValue) >= 0);
+            } else if(document.getElementById("search-name").checked) {
+                filteredResults = data.restaurants.filter(f => f.name.indexOf(currentValue) >= 0);
+            } else if(document.getElementById("search-rating").checked) {
+                filteredResults = data.restaurants.filter(f => f.rating == currentValue);
+            }
             if(filteredResults.length > 0) {
                 const searchController = searchResult();
                 const ratingController = ratingResult();

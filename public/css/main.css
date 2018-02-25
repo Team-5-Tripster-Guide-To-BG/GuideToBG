@@ -94,3 +94,19 @@
 
     margin-top: 20px;
 }
+
+#search-area{
+    cursor: pointer;
+}
+
+.search-header:hover {
+    background-color: #ffffff;
+    color: deeppink;
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: -35px;
+    overflow: unset !important;
+}

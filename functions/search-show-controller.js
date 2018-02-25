@@ -1,7 +1,20 @@
 const showSearchArea = function() {
 
     const html = function() {
-        return `<div class="container-fluid id="search-input-area">
+        return ` <div class="container">
+       <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Please select search criteria</label>
+                <div class="col-sm-8">
+                    <label class="radio-inline"> <input type="radio" name="criteria" id="search-city" value="clear" checked>City</label>
+                    <label class="radio-inline"> <input type="radio" name="criteria" id="search-name" value="cloudy">Name</label>
+                    <label class="radio-inline"> <input type="radio" name="criteria" id="search-rating" value="cloudy">Rating</label>
+                </div>
+            </div>           
+        </form>
+    </div>
+
+<div class="container-fluid id="search-input-area">
                         <div class="col-sm-6">
                             <div class="input-group">
                                 <input type="text" class="form-control" id ="hotel-search-input" placeholder="Search for hotels">
