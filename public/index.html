@@ -34,9 +34,9 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#wrapper">Home</a></li>
-                        <li><a href="#aboutUs">About Us</a></li>
-                        <li><a href="#band">General Info</a></li>
-                        <li><a href="#usefulTips">Useful Tips</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#general-info">General Info</a></li>
+                        <li><a href="#useful-tips">Useful Tips</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -113,7 +113,7 @@
             </div>
 
             <!-- Container (The About Us Section) -->
-            <div id="aboutUs" class="container text-center">
+            <div id="about-us" class="container text-center">
                 <h3 class="the-tripsters-about"><strong>The Tripsters</strong></h3>
                 <p><em>"Life is not meant to be lived in one place!"</em></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -154,7 +154,16 @@
                     </div>
                 </div>
             </div>
-            <div id="usefulTips" class="container">
+
+            <!-- Container (General Info Section) -->
+            <div id="general-info" class="container text-center general-info-container">
+                <h3 class="general-info-heading"><strong>General Info</strong></h3>
+                <p id="general-info-text"></p>
+                <button id="show-general-info">Show More</button>
+                <div id="general-info-show-area"></div>
+            </div>
+
+            <div id="useful-tips" class="container">
                 <h3 class="usefulTips"><strong>Useful tips</strong></h3>
                 <p class="center"><em>"I wish I knew all this when I visited your neighbours!!"</em></p>
                 <br/>
@@ -255,7 +264,7 @@
             </div>
 
 
-            <div class="contact-form">
+            <div id="contact" class="contact-form">
                 <ul id="error-msg"></ul>
                     <form id="contact-form" onsubmit="return validateForm();">
                         <h3 id="title">Contact Form</h3>
@@ -278,6 +287,7 @@
 
         </main>
 </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -296,9 +306,14 @@
     <script src="../functions/database.js"></script>
     <script src="../functions/search-result.js"></script>
     <script src="../functions/search-show.js"></script>
-    <script src="./data/useful-tips-data.json"></script>
+    <script type="application/json" src="./data/useful-tips-data.json"></script>
     <script src="../functions/useful-tips-logic.js"></script>
     <script src="../functions/useful-tips-db-logic.js"></script>
     <script src="../functions/form-validation.js"></script>
+    <script src="../functions/general-info-logic.js"></script>
+    <script src="../functions/general-info-db-logic.js"></script>
+    <script type="application/json" src="./data/general-info-data.json"></script>
+    <script src="../functions/general-show.js"></script>
+    <script src="../functions/general-show-controller.js"></script>
 </body>
 </html>
