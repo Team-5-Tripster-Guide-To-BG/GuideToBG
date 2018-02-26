@@ -1,13 +1,13 @@
 {
-  "arrival": "plane",
-  "subway": "sub",
-  "taxi": "brum brum",
-  "timezone": "eat eat eat eat",
-  "currency": "travel travel travel",
-  "plugstandart": "plug",
-  "creditcard": "credit",
-  "restaurants": "resto",
-  "bars": "baaar",
-  "party": "paaar",
-  "shopping": "shop"
+  "arrival": "<a href=\"https:\/\/www.sofia-airport.bg\/en\">Sofia airport<\/a> is the official website of the airport. It is situated 10 km (~6 miles) north-east from the city center. The available public transport is as follows: \n  - <strong>the subway</strong> travels to and from the airport every 10 minutes on average from 5:30 AM to 11:30 PM; \n - <strong>public bus</strong> transport lines 84, 184, 384 travel to Terminal 2, lines 84 and 184 to Terminal 1. You may use their official website for timetable <a href=\"https:\/\/www.sofiatraffic.bg\/en\/common\">Bus timetable<\/a>; \n - <strong>taxi</strong> is another option.",
+  "subway": "Subway covers a vast area of the city, with 63 stations. Please make sure you buy a ticket for your suitcase if the sum of each dimension is more than 140 cm. The official timetable can be found here: <a href=\"http:\/\/www.metropolitan.bg\/en\/schedule\/\">Subway timetable<\/a>.",
+  "taxi": "Tax cars are yellow, only the e-taxis are green colored. Always ask the driver for the approximate fare in advance. The average fare to get to the center is BGN 20 in busy hours.",
+  "timezone": "The timezone is UTC +2, Daylight Saving Time is applied.",
+  "currency": "The currency is Bulgarian lev (BGN), and the coins are called stotinki. You can see how they look like here <a href=\"http:\/\/www.bnb.bg\/NotesAndCoins\/NACCoinsCurrency\/index.htm\">Coins<\/a> & <a href=\"http:\/\/www.bnb.bg\/NotesAndCoins\/NACNotesCurrency\/index.htm\">Notes<\/a>. The fixed exchange rate between EUR and BGN is 1.95583 BGN for 1 EUR.",
+  "plugstandart": "In Bulgaria the power sockets are of type F (commonly called \"Schuko plug\"). The standard voltage is 230 V and the standard frequency is 50 Hz.",
+  "creditcard": "Credit cards are accepted in most restaurants and shops but please ask in advance.",
+  "restaurants": "Restaurants for each taste can be found in the larger cities. Most restaurants offer lunch meals on discounted prices so if you are on a tight budget this is a good option. Tipping is appreciated for a good service and a commonly accepted tip is 10% of the bill. Please always check the receipt - tip might be already included.",
+  "bars": "Beer shops, Hookah bars, rakia bars. Just choose what you want and head there!",
+  "party": "Party centers for each taste can be found in the larger cities: Rock, Pop, Electronic, House and local pop-folk music.",
+  "shopping": "There are several large shopping malls which offer popular brands. Local handmade stuff can be found in the small streets in city centers of Sofia and Plovdiv."
 }
