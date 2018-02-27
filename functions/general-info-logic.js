@@ -5,10 +5,12 @@ document.getElementById("general-info-text").innerHTML = strGeneralInfoJSON.gene
 
 $(".general-info-container").on("click", "#show-general-info", function () {
 
-    dbGeneralInfo.getActivity().then(function (data) {
+    dbGeneralInfo.getGeneralInfo().then(function (data) {
         $(".infoPopulationTitle").html(data.infoPopulation.title);
         $(".infoPopulation").html(data.infoPopulation.text);
         $(".infoHistoryTitle").html(data.infoHistory.title);
         $(".infoHistory").html(data.infoHistory.text);
+        $(".infoTourismTitle").html(data.infoTourism.title);
+        $(".infoTourism").html(data.infoTourism.text);
     });
 });

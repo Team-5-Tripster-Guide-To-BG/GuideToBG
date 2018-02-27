@@ -1,6 +1,6 @@
 const dbGeneralInfo = (function () {
 
-    function getActivity() {
+    function getGeneralInfo() {
 
         return new Promise((res, rej) => {
 
@@ -10,7 +10,7 @@ const dbGeneralInfo = (function () {
         });
     }
     return{
-        getActivity
+        getGeneralInfo
     }
 })();
 
