@@ -20,7 +20,7 @@ function validateForm() {
     var element = document.createElement("li");
     var msg = document.createTextNode("Please enter name and email address.");
     element.appendChild(msg);
-    element.className = "alert";
+    element.className = "alert alert-danger";
     errorList.appendChild(element);
     isValid = false;
   }
@@ -29,7 +29,7 @@ function validateForm() {
     var element = document.createElement("li");
     var msg = document.createTextNode("The name field can't contain any numbers or special characters.");
     element.appendChild(msg);
-    element.className = "alert";
+    element.className = "alert alert-danger";
     errorList.appendChild(element);
     isValid = false;
   }
@@ -38,7 +38,7 @@ function validateForm() {
     var element = document.createElement("li");
     var msg = document.createTextNode("Please enter a valid email address.");
     element.appendChild(msg);
-    element.className = "alert";
+    element.className = "alert alert-danger";
     errorList.appendChild(element);
     isValid = false;
   }

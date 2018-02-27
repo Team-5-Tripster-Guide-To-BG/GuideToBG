@@ -264,26 +264,27 @@
             </div>
 
 
-            <div id="contact" class="contact-form">
+            <div class="contact-form">
                 <ul id="error-msg"></ul>
-                    <form id="contact-form" onsubmit="return validateForm();">
-                        <h3 id="title">Contact Form</h3>
-                        <div id="fileds">
-                            <div id="name-field">
+                    <form id="contact-form" class="contact-form" onsubmit="return validateForm();">
+                        <h3 class="title">Contact Form</h3>
+                        <div class="fileds">
+                            <div id="name-field" class="name">
                                 <input id="name" type="text" name="name" placeholder="Name">
                             </div>
-                            <div id="email-field">
+                            <div id="email-field" class="email">
                                 <input id="email" type="email" name="email" placeholder="Email" >
                             </div>
                         </div>
                     <div>
-                        <textarea id="message" name="message" class="validate" placeholder="Message"></textarea>
+                        <textarea id="message" class="message" name="message" class="validate" placeholder="Message"></textarea>
                     </div>
                     <div>
                          <button id="button" type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>
+
 
         </main>
 </div>
@@ -293,6 +294,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="../functions/animate-contact-fields.js"></script>
+    <script src="../functions/database-contact-me.js"></script>
+    <script src="../functions/save-form.js"></script>
     <script type="text/javascript" src="../node_modules/printthis/printThis.js"></script>
     <script src="../functions/smooth-scrolling.js"></script>
     <script src="../functions/collapsible-function.js"></script>
