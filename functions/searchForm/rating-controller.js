@@ -1,10 +1,10 @@
-const ratingResult = function() {
+const ratingResult = (function() {
 
-    const html = function(searchResult) {
+    function rating(currentRating) {
         var result = "";
 
-        var positiveRating = searchResult.rating;
-        var negativeRating = 5 - searchResult.rating;
+        var positiveRating = currentRating;
+        var negativeRating = 5 - currentRating;
 
         for (var i = 0; i < positiveRating; i += 1) {
             result += "<span class=\"fa fa-star checked\"></span>\n";
@@ -16,6 +16,6 @@ const ratingResult = function() {
     };
 
     return {
-        html
+        rating : rating
     };
-};
+})();

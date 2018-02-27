@@ -1,6 +1,6 @@
-const showSearchArea = function() {
+const showSearchArea = (function() {
 
-    const html = function() {
+    function html () {
         return ` <div class="container">
        <form class="form-horizontal" role="form">
             <div class="form-group">
@@ -41,4 +41,4 @@ const showSearchArea = function() {
     return {
         html
     };
-};
+})();

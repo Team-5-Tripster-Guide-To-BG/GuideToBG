@@ -1,6 +1,7 @@
-const databaseFunction = function() {
-    return {
-        hotels: [
+const databaseFunction = (function() {
+
+    function hotels() {
+        return [
             {
                 id: 0,
                 name: 'Cherno more',
@@ -37,8 +38,11 @@ const databaseFunction = function() {
                 telephone: '+359 0101010101',
                 regularPricePerGuest: 150
             }
-        ],
-        restaurants: [
+        ]
+    };
+
+    function restaurants() {
+        return [
             {
                 id: 1,
                 name: 'Ribarska sreshta',
@@ -67,5 +71,12 @@ const databaseFunction = function() {
                 regularPricePerGuest: 15
             }
         ]
+
+    }
+
+
+    return {
+        restaurants,
+        hotels
     };
-};
+})();
