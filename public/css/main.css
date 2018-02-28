@@ -148,3 +148,14 @@ a{
 #show-general-info:hover{
     background-color: #bbb;
 }
+
+#tourism, #history, #population {
+    margin-top: 30px;
+}
+#search-name, #search-rating {
+    margin-left: -24px;
+}
+
+footer{
+    margin-top: 50px;
+}

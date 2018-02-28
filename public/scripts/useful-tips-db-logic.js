@@ -4,7 +4,7 @@ const database = (function () {
 
         return new Promise((res, rej) => {
 
-            $.getJSON("../public/data/useful-tips-data.json", function (data) {
+            $.getJSON("./data/useful-tips-data.json", function (data) {
 
                 if(name === "arrival"){
                     res (data.arrival);
