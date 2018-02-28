@@ -1,5 +1,5 @@
 function printDiv() {
-    const divToPrint=document.getElementById('personalTripsterList');
+    const divToPrint = document.getElementById('personalTripsterList');
 
     let newWin=window.open('','Print-Window');
 

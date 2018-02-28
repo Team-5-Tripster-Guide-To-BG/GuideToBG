@@ -8,8 +8,8 @@ const showGeneralInfo = function() {
                <div class="chart-container">
                 <canvas id="populationChart"></canvas>
                 </div>
-                <script>var ctx = document.getElementById("populationChart");
-                        var populationChart = new Chart(ctx, {
+                <script>let ctxPopulation = $("#populationChart");
+                        let populationChart = new Chart(ctxPopulation, {
                             type: 'line',
                             data: {
                                 labels: ["1970", "1980", "1990", "2000", "2010", "2018"],
@@ -35,7 +35,7 @@ const showGeneralInfo = function() {
                                 }
                             }
                     });
-                    document.getElementById("populationChart").innerHTML = populationChart;
+                        $("#populationChart").html("populationChart");
                     </script>
          </div>
        <div id="tourism" class="container-fluid">
@@ -44,8 +44,8 @@ const showGeneralInfo = function() {
              <div class="chart-container">
             <canvas id="touristsChart"></canvas>
             </div>
-            <script>var ctx = document.getElementById("touristsChart");
-                    var touristsChart = new Chart(ctx, {
+            <script>let ctxTourists = document.getElementById("touristsChart");
+                    let touristsChart = new Chart(ctxTourists, {
                         type: 'doughnut',
                         data: {
                             datasets: [{
@@ -74,7 +74,8 @@ const showGeneralInfo = function() {
                             ]
                         }
                 });
-                document.getElementById("touristsChart").innerHTML = touristsChart;
+                    $("#touristsChart").html("touristsChart");
+                    
                 </script>
         </div>
         <div id="history" class="container-fluid">
