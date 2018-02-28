@@ -11,17 +11,17 @@ $(function() {
     e.preventDefault(); // cancel the actual submit
 
     const baseForMsgs = cotactDatabaseFunction;
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var msg = $("#message").val();
+    const name = $("#name").val();
+    const email = $("#email").val();
+    const msg = $("#message").val();
 
-    var curentContact = {
+    const curentContact = {
       name: name,
       email: email,
       msg: msg
     };
 
-    var test = {
+    const test = {
       name: "Cena",
       email: "ceneto@cec.com",
       msg: "zdr ko pr"

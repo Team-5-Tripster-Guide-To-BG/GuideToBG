@@ -1,5 +1,5 @@
 const cotactDatabaseFunction = (function() {
-  var contacts = [];
+  let contacts = [];
     return {
         contacts
     }

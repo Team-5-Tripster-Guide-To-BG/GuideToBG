@@ -5,12 +5,11 @@ const dbGeneralInfo = (function () {
         return new Promise((res, rej) => {
 
             $.getJSON("./data/general-info-data.json", function (data) {
-                res(data.categories);
-            });
+            res(data.categories);
         });
+    });
     }
     return{
         getGeneralInfo
     }
 })();
-

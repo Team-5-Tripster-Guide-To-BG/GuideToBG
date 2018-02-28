@@ -3,7 +3,7 @@ $(document).ready(function() {
         if (this.hash !== "") {
             event.preventDefault();
 
-            var hash = this.hash;
+            let hash = this.hash;
 
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
@@ -16,9 +16,9 @@ $(document).ready(function() {
 
     $(window).scroll(function () {
         $(".slideanim").each(function () {
-            var pos = $(this).offset().top;
+            let pos = $(this).offset().top;
 
-            var winTop = $(window).scrollTop();
+            let winTop = $(window).scrollTop();
             if (pos < winTop + 600) {
                 $(this).addClass("slide");
             }

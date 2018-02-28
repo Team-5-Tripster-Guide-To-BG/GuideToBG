@@ -39,7 +39,6 @@ const showGeneralInfo = function() {
                     </script>
          </div>
        <div id="tourism" class="container-fluid">
-
             <h3 class="general-info-more infoTourismTitle" data-name="infoTourismTitle"></h3>
            <p class="general-info-more infoTourism" data-name="infoTourism"></p>
              <div class="chart-container">

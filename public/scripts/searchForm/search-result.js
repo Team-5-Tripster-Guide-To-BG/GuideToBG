@@ -1,6 +1,6 @@
 (function () {
     $(document).on('click', '#hotel-search-btn',  function() {
-        var currentSearchValue = $("#hotel-search-input").val().toLowerCase();
+        const currentSearchValue = $("#hotel-search-input").val().toLowerCase();
         $("#results").empty();
 
         if(currentSearchValue.length === 0){
@@ -10,7 +10,7 @@
             })}
 
         else {
-            var filteredResults;
+            let filteredResults;
             if($('#search-city').is(':checked')) {
                 filteredResults = databaseFunction.hotels().filter(f => f.city.toLowerCase().indexOf(currentSearchValue) >= 0);
             } else if($('#search-name').is(':checked')) {
@@ -21,8 +21,8 @@
 
             if(filteredResults.length > 0){
 
-                for(var currentResult of filteredResults) {
-                    var node = $("<div>");
+                for(let currentResult of filteredResults) {
+                    let node = $("<div>");
                     node.append(ratingResult.rating(currentResult.rating));
                     node.append(searchResult.successfulResult(currentResult));
                     $('#results').append(node);
@@ -40,7 +40,7 @@
     });
     $(document).on('click', '#restaurant-search-btn',  function() {
 
-        var currentSearchValue = $("#restaurant-search-input").val().toLowerCase();
+        const currentSearchValue = $("#restaurant-search-input").val().toLowerCase();
         $("#results").empty();
 
         if(currentSearchValue.length === 0){
@@ -49,7 +49,7 @@
             })}
 
         else {
-            var filteredResults;
+            let filteredResults;
 
             if($('#search-city').is(':checked')) {
                 filteredResults = databaseFunction.restaurants().filter(f => f.city.toLowerCase().indexOf(currentSearchValue) >= 0);
@@ -61,8 +61,8 @@
             if(filteredResults.length > 0) {
 
 
-                for(var currentResult of filteredResults) {
-                    var node = $("<div>");
+                for(let currentResult of filteredResults) {
+                    let node = $("<div>");
                     node.append(ratingResult.rating(currentResult.rating));
                     node.append(searchResult.successfulResult(currentResult));
                     $('#results').append(node);

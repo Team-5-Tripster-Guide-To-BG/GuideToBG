@@ -71,7 +71,6 @@ const databaseFunction = (function() {
                 regularPricePerGuest: 15
             }
         ]
-
     }
 
 

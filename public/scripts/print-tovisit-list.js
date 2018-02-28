@@ -1,9 +1,7 @@
-// TODO: replace this function with jquery plug-in $('personalTripsterList').printThis(); in order to display CSS as well
-
 function printDiv() {
-    var divToPrint=document.getElementById('personalTripsterList');
+    const divToPrint=document.getElementById('personalTripsterList');
 
-    var newWin=window.open('','Print-Window');
+    let newWin=window.open('','Print-Window');
 
     newWin.document.open();
 
