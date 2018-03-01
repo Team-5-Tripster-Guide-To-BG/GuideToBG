@@ -8,8 +8,8 @@ const showGeneralInfo = function() {
                <div class="chart-container">
                 <canvas id="populationChart"></canvas>
                 </div>
-                <script>let ctxPopulation = $("#populationChart");
-                        let populationChart = new Chart(ctxPopulation, {
+                <script>var ctxPopulation = $("#populationChart");
+                        var populationChart = new Chart(ctxPopulation, {
                             type: 'line',
                             data: {
                                 labels: ["1970", "1980", "1990", "2000", "2010", "2018"],
@@ -44,8 +44,8 @@ const showGeneralInfo = function() {
              <div class="chart-container">
             <canvas id="touristsChart"></canvas>
             </div>
-            <script>let ctxTourists = document.getElementById("touristsChart");
-                    let touristsChart = new Chart(ctxTourists, {
+            <script>var ctxTourists = document.getElementById("touristsChart");
+                    var touristsChart = new Chart(ctxTourists, {
                         type: 'doughnut',
                         data: {
                             datasets: [{
